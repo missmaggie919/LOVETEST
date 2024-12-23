@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI恋爱契合度测试</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI恋爱契合度测试</h1>
+        
+        <!-- 测试表单 -->
+        <form id="loveTest">
+            <!-- 第一个人的信息 -->
+            <div class="person-info">
+                <h2>你的信息</h2>
+                <input type="text" placeholder="你的名字" required>
+                <input type="number" placeholder="你的年龄" required>
+                <select required>
+                    <option value="">选择你的星座</option>
+                    <option value="白羊座">白羊座</option>
+                    <option value="金牛座">金牛座</option>
+                    <option value="双子座">双子座</option>
+                    <option value="巨蟹座">巨蟹座</option>
+                    <option value="狮子座">狮子座</option>
+                    <option value="处女座">处女座</option>
+                    <option value="天秤座">天秤座</option>
+                    <option value="天蝎座">天蝎座</option>
+                    <option value="射手座">射手座</option>
+                    <option value="摩羯座">摩羯座</option>
+                    <option value="水瓶座">水瓶座</option>
+                    <option value="双鱼座">双鱼座</option>
+                </select>
+            </div>
+
+            <!-- 第二个人的信息 -->
+            <div class="person-info">
+                <h2>TA的信息</h2>
+                <input type="text" placeholder="TA的名字" required>
+                <input type="number" placeholder="TA的年龄" required>
+                <select required>
+                    <option value="">选择TA的星座</option>
+                    <option value="白羊座">白羊座</option>
+                    <option value="金牛座">金牛座</option>
+                    <option value="双子座">双子座</option>
+                    <option value="巨蟹座">巨蟹座</option>
+                    <option value="狮子座">狮子座</option>
+                    <option value="处女座">处女座</option>
+                    <option value="天秤座">天秤座</option>
+                    <option value="天蝎座">天蝎座</option>
+                    <option value="射手座">射手座</option>
+                    <option value="摩羯座">摩羯座</option>
+                    <option value="水瓶座">水瓶座</option>
+                    <option value="双鱼座">双鱼座</option>
+                </select>
+            </div>
+
+            <button type="submit">开始测试</button>
+        </form>
+
+        <!-- 结果展示区域 -->
+        <div id="resultSection" class="result-section hidden">
+            <div class="result-card">
+                <h2>测试结果</h2>
+                <div class="score-circle">
+                    <span id="compatibilityScore">0</span>%
+                </div>
+                <p id="compatibilityMessage"></p>
+                <button onclick="resetTest()" class="reset-button">重新测试</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
